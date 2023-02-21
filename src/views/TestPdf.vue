@@ -32,10 +32,11 @@ export default {
         putOnlyUsedFonts: true,
         floatPrecision: 16, // or "smart", default is 16
       };
+      //
       var doc = new jsPDF(options);
       var pdfjs = document.querySelector("#contenu-pdf");
-
       // Convert HTML to PDF in JavaScript
+
       doc.html(pdfjs, {
         callback: function (doc) {
           //doc.setDisplayMode("10%");

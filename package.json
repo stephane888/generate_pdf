@@ -5,15 +5,18 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "Dev": "vue-cli-service build --mode development --watch  --dest files --target lib --name AppButtonPdf 'src/AppButton.js'",
+    "Prod": "vue-cli-service build --mode production  --dest files --target lib --name AppButtonPdf 'src/AppButton.js'"
   },
   "dependencies": {
     "@stephane888/wbu-atomique": "file:../wbu-atomique",
+    "bootstrap": "^4.6.2",
+    "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
     "jspdf": "^2.5.1",
     "vue": "^2.6.14",
-    "vue-router": "^3.5.1",
-    "vuex": "^3.6.2"
+    "vue-router": "^3.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
